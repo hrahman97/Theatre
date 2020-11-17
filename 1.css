@@ -1,0 +1,144 @@
+@charset "utf-8"; 
+
+font-family: 'Roboto', sans-serif;
+
+.navbar-brand img {
+	url= "#home";
+}
+	
+body {
+	margin: 0; 
+	padding: 0;
+	height: 95%;
+}
+
+html {
+	height:100%;
+}
+
+.nav ul {
+	list-style: none; 
+	background: #1A1A1D; 
+    letter-spacing: 2.5px;
+	text-align: center; 
+	padding: 0; 
+	margin: 0; 
+	border-bottom: 3px solid #FF734D;
+}
+
+.nav li {
+	display: inline-block; 
+}
+
+.nav a {
+	text-decoration: none; 
+	color: white; 
+	width: 100px; 
+	display: block; 
+	padding: 15px; 
+	font-size: 17px; 
+	font-family: 'Roboto'; 
+	transition: 0.4s;
+
+}	
+
+.nav a:hover {
+    opacity: 0.90;
+    color: #FC4445;
+    text-decoration: none;
+}
+
+.nav a.active {
+	color: #FF734D;
+}
+
+button {
+  background-color: #FF734D;
+  border: 1px solid #FF734D;
+  border-radius: 3px;
+  padding: 14px 20px 20px;
+  cursor: pointer;
+  width: auto;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.carousel, .item, .active {
+	height:100%;
+	}
+	
+.carousel-inner {
+	height:100%;
+	}
+	
+.carousel {
+	margin-bottom:0px;
+	}
+	
+.carousel-caption {
+	z-index: 000;
+	position: relative;
+	margin: 190px;
+	}
+	
+.carousel-caption h1 {
+	font-size: 70px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 3px 3px 3px #000000;
+}
+.carousel-caption > p {
+	font-size: 30px;
+}
+
+.carousel .item {
+	background-color: #777;
+	}
+
+.carousel-indicators {
+	margin-bottom: 10px;
+}
+	
+.carousel .carousel-inner .bg {
+	background-repeat:no-repeat;
+	background-size:cover;
+	}
+	
+.carousel .carousel-inner .bg1 {
+	background-image:url('https://cdn.pixabay.com/photo/2016/05/06/17/06/ballet-1376250_1280.jpg');
+	background-position: center top;
+	}
+	
+.carousel .carousel-inner .bg2 {
+	background-image:url('https://cdn.pixabay.com/photo/2017/08/01/21/47/dark-2568157_1280.jpg');
+	background-position: center center;
+	}
+	
+.carousel .carousel-inner .bg3 {
+	background-image:url('https://cdn.pixabay.com/photo/2016/01/19/06/31/face-mask-1147977_1280.jpg');
+	background-position: center top;
+	}
+	
+.carousel .carousel-inner .btn-lg {
+	background-color: #FF734D;
+	color: #fff;
+	border: #000;
+	box-shadow: 2px 2px 2px #000;
+	}
+	
+@media screen and (max-width: 100px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.footer {
+    margin-bottom: 10px;
+    font-size: 14px;
+    background-color: white;
+    color: lightgray;
+    text-align: center;
+}

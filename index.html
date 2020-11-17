@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+  <script src="scripts/init.js"></script>
+  
+  <!-- Firebase App is always required and must be first
+  <script defer src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/5.9.2/firebase-auth.js"></script>
+  <script defer src="/__/firebase/init.js"></script> -->
+  <!-- <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" /> -->
+
+  <!-- Add bootstrap stylesheet and jquery-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login / Create Account</title>
+  <link rel="stylesheet" type="text/css" href="nav.css"/>
+  <link rel="stylesheet" type="text/css" href="index.css"/>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137796022-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-137796022-1');
+  </script>
+</head>
+<body>
+    <!-- Navbar -- Needs to be consistent-->
+    <header class="navbar navbar-expand-lg navbar-dark bg-light">
+        <div class="logo">
+            <img src="image/logo.png" alt="Company's Logo">
+        </div>
+        <div class="anchor">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shows.html">Show</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>  
+        <div class="profile">
+            <button class="btn-signin" id="btn-signin" onclick="handle_signin()">      
+                SIGN IN
+            </button>
+            <!-- Example single danger button -->
+            <div class="btn-group" id="btn-profile">
+                <button type="button" class="btn btn-orange dropdown-toggle" onclick="displayShoppingCart()" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Welcome, <span id="profile-user-name"><strong>username</strong></span>
+                </button>
+            <div class="dropdown-menu">
+                <div class="dropdown-item">
+                    <h5>Shopping Cart</h5>
+                    <hr>
+                    <i class="fas fa-trash" onclick="remove()"></i>
+                    <div id="shoppingCart"></div>
+                </div>
+                <div class="dropdown-item">
+                    <h5>Booked Shows</h5>
+                    <hr>
+                    <div id="bookedShow"></div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <button class="btn btn-signout" id="btn-signout">SIGN OUT</button>     
+                <button class="btn btn-orange" id="checkout" type="submit" target="_self">
+                    <a href="checkout.html">GO CHECKOUT</a>
+                </button>   
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item bg bg1 active">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Live Shows</h1>
+                    <p></p>
+                    <button type="button" class="btn btn-info btn-lg" onclick="location.href='shows.html'">Book Now!</button>
+                </div>
+            </div>
+          </div>
+          <div class="item bg bg2">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Entertainment</h1>
+                    <p>At its finest</p>
+                </div>
+            </div>
+          </div>
+          <div class="item bg bg3">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Drama</h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    
+    <div class="footer">
+        <p>&#169; New Fox Theatre 2019 </p>
+    </div>
+
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="/__/firebase/5.10.0/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="/__/firebase/5.10.0/firebase-auth.js"></script>
+  <script src="/__/firebase/5.10.0/firebase-firestore.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+
+  <script src="scripts/app-auth.js"></script>
+</body>
+</html>

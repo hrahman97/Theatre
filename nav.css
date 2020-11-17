@@ -1,0 +1,202 @@
+@charset "utf-8"; 
+
+font-family: 'Roboto', sans-serif;
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  margin: 0%;
+  padding: 0%;
+  height: 100vh;
+  background: #FFFFFF;
+  overflow: y;
+}
+
+.navbar {
+  height: 57px;
+  width: 100%;
+  border-bottom: 3px solid #FF734D;
+  margin-bottom: 0px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #1A1A1D;
+  border-radius: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  padding: 15px;
+  font-size: 1em;
+  transition: 0.4s;
+}
+
+.navbar a.active {
+  color: #FF734D;
+}
+
+.navbar a:hover {
+  opacity: 0.90;
+  color: #FC4445;
+  text-decoration: none;
+}
+
+div.logo img{
+  width: 250px;
+  position: relative;
+  bottom: 5px;
+  left: 20px;
+}
+
+.dropdown-menu button{
+  font-size: 1em;
+}
+
+div.anchor, div.logo {
+  display: inline;
+}
+
+ul {
+  list-style-type: none;
+  display: inline;
+  margin: 0;
+  margin-left: 140px;
+  overflow: hidden;
+  font-size: 2em;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  /* display: block; */
+  cursor: pointer;
+  color: #000000;
+  text-align: center;
+  padding: 9px 16px;
+  text-decoration: none;
+}
+
+.person img {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-size: 50px;
+  padding: 4px 0px;
+  color: #ffffff;
+}
+
+header .anchor a, .dropdown-toggle{
+  font-size: 0.7em;
+}
+
+.btn-signin { 
+  color: #ffffff; 
+  background-color: #FF734D;
+  border: 1px solid #FF734D;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 5px 12px;
+  cursor: pointer;
+  position: absolute;
+  top:-1px;
+  right: 0px;
+  height: 57px;
+  width: auto;
+  cursor: pointer;
+} 
+
+#btn-profile{
+  visibility: hidden;
+  font-size: 1.5em;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: -2px;
+  right: -1px;
+}
+
+.profile .btn-group .btn{
+  height: 57px;
+}
+
+.profile .dropdown-menu .btn-orange {
+  position: relative;
+  left: 10px;
+}
+
+.profile .btn-group .btn-orange:hover{
+  background: #FF734D;
+  border: none;
+}
+
+.btn-orange{
+  background: #FF734D;
+  border: none;
+  color: #ffffff;
+}
+
+#alert-primary, #alert-addCart{
+  display: none;
+}
+
+button#btn-signout{
+  padding: 0;
+}
+
+.dropdown-divider {
+  margin-bottom: 20px;
+}
+
+.shows p{
+  display: block;
+  text-align: right;
+  padding-right: 20px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}   
+
+.shows:hover{
+  background: azure;
+}
+
+.dropdown-menu h4, .dropdown-menu h5{
+  font-weight: 600;
+}
+
+.dropdown-menu {
+  overflow-y: scroll;
+  left: -100px;
+  padding: 0 10px;
+  border: none;
+  margin: 0px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+
+.dropdown-menu .btn{
+  padding: 6px 12px;
+}
+
+#checkout {
+  float: right;
+}
+
+#checkout a {
+  color: white;
+}
+
+.fa-trash{
+  font-size: 1.25rem;
+
+  position: absolute;
+  top: 15px;
+  right: 25px;
+}

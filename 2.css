@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+font-family: 'Roboto', sans-serif;
+ 
+.navbar-brand img {
+	url= "#home";
+}
+
+body {
+	margin: 0; 
+	padding: 0; 
+}
+
+.nav ul {
+	list-style: none; 
+	background: #1A1A1D; 
+    letter-spacing: 2.5px;
+	text-align: center; 
+	padding: 0; 
+	margin: 0; 
+	border-bottom: 3px solid #FF734D;
+
+}
+
+.nav li {
+	display: inline-block; 
+}
+
+.nav a {
+	text-decoration: none; 
+	color: white; 
+	width: 100px; 
+	display: block; 
+	padding: 15px; 
+	font-size: 17px; 
+	font-family: 'Roboto'; 
+	transition: 0.4s;
+
+}	
+
+.nav a:hover {
+    opacity: 0.90;
+    color: #FC4445;
+    text-decoration: none;
+}
+
+.nav a.active {
+	color: #FF734D;
+}
+
+button {
+  background-color: #FF734D;
+  border: 1px solid #FF734D;
+  border-radius: 3px;
+  padding: 14px 20px 20px;
+  cursor: pointer;
+  width: auto;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+#shows {
+	padding-top: 3em;
+	padding-bottom: 3em;
+	padding-left: 20px;
+	background-color: white;
+}
+
+text2 > a:link { 
+	color: white;
+}
+
+text2 > a:hover {
+    color: white;
+	text-decoration: none;
+}
+
+
+h4 {
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 2px;
+	font-size: 15px;
+	float: left;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FF734D;
+}
+
+.col-lg-4:hover .overlay {
+  opacity: 0.9;
+}
+
+.col-lg-4 box {
+  opacity: 0.9;
+}
+
+.title { 
+  color: #FF734D;
+  text-transform: uppercase;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  width: 200px;
+  text-align: justify; 
+}
+
+.text2{
+  color: white;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.footer {
+    margin-top: 130px;
+    width: 100%;
+    background-color: transparent;
+    color: lightgray;
+    text-align: center;
+}

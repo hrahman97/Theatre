@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  
+<title>New Fox Theatre</title>
+
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link href="3.css" rel="stylesheet"/>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+   
+<style>
+
+</style>
+   
+</head>
+
+<body> 
+<img style="max-width:200px; margin-top: 10px; float: left; position: fixed;" src="logo.png" >
+
+
+<div class= "nav">
+	<ul>	
+ 		 <li><a href="1.html">Home</a></li>
+ 		 <li><a href="2.html">Shows</a></li>
+ 		 <li><a class="active" href="3.html">Contact</a></li>
+  		 <li><a href="4.html">About</a></li>
+  		 
+  		<button onclick="window.location.href = 'https://login-7d2d2.firebaseapp.com/auth.html';" style="width:auto; float:right; ">Login</button>
+	
+	</ul>
+
+</div>
+
+<div class="container">
+  <div style="text-align:center">
+  </div>
+  <div class="row">
+    <div class="column">
+      <p> </p>
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+      <div class="modal-content">
+        <div class="modal-header">
+          <center><h4 class="modal-title">Contact Us</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+      <label for="nm">Full Name*</label>
+      <input type="text" class="form-control" id="nm" required>
+    </div>
+    <div class="form-group">
+      <label for="phn">Phone* </label>
+      <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="form-control" id="phn" required>
+    </div>
+    <div class="form-group">
+      <label for="ml">Email*</label>
+      <input type="email" class="form-control" id="ml" required>
+    </div>
+    <div class="container">
+  
+</div>
+<div class="form-group">
+  <label for="comment">Tell us about your problem*: </label>
+  <textarea class="form-control" rows="5" id="comment" required></textarea>
+</div>
+    <button type="submit" input type="submit" class="sub sub-default">Submit</button>  
+   
+</div>
+  </form>     
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&#169; New Fox Theatre 2019 </p>
+</div>
+</body>
+</html>

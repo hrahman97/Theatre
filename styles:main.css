@@ -1,0 +1,96 @@
+@charset "utf-8"; 
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  margin: 0%;
+  padding: 0%;
+  height: 100vh;
+  background: #FFFFFF;
+  overflow: y;
+}
+
+div.nav {
+  -webkit-box-shadow: 0px 3px 22px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 22px -5px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 22px -5px rgba(0,0,0,0.75);
+  float: left;
+  height: 57px;
+  width: 100vw;
+  background-color: #ffffef;
+  position: fixed;
+  top: 0;
+}
+
+div.logo img{
+  width: 90px;
+  position: relative;
+  top: -8px;
+  left: 20px;
+}
+
+div.anchor, div.logo {
+  display: inline;
+}
+
+ul {
+  list-style-type: none;
+  display: inline;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 110px;
+  font-size: 2em;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  /* display: block; */
+  cursor: pointer;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.person img {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-size: 50px;
+  padding: 4px 0px;
+  color: #ffffff;
+}
+
+li a:hover, ion-icon:hover {
+  background-color: rgb(225, 241, 74);
+  color: #000000;
+}
+
+.btn-signin { 
+  right: 35px;
+} 
+
+button.btn.btn-signup { 
+  right: 150px;
+} 
+
+.btn {
+  color: #ffffff; 
+  background-color: #5B1DAD; 
+  border-color: #EEEDF2; 
+  font-size: 1.5em;
+  text-align: center;
+  padding: 5px 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  position: absolute;
+  top:8px;
+}

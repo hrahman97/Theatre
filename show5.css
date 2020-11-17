@@ -1,0 +1,115 @@
+@charset "utf-8"; 
+
+font-family: 'Roboto', sans-serif;
+
+.navbar-brand img {
+	url= "#home";
+}
+	
+body {
+	margin: 0; 
+	padding: 0;
+	height: 95%;
+}
+
+html {
+	height:100%;
+}
+
+.nav ul {
+	list-style: none; 
+	background: #1A1A1D; 
+    letter-spacing: 2.5px;
+	text-align: center; 
+	padding: 0; 
+	margin: 0; 
+	border-bottom: 3px solid #FF734D;
+}
+
+.nav li {
+	display: inline-block; 
+}
+
+.nav a {
+	text-decoration: none; 
+	color: white; 
+	width: 100px; 
+	display: block; 
+	padding: 15px; 
+	font-size: 17px; 
+	font-family: 'Roboto'; 
+	transition: 0.4s;
+
+}	
+
+.nav a:hover {
+    opacity: 0.90;
+    color: #FC4445;
+    text-decoration: none;
+}
+
+.nav a.active {
+	color: #FF734D;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 900px;
+  height: 490px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.card h1 {
+  float: left; 
+  margin-left: -33%;
+}
+
+.description {
+  width: 33%;
+  float: left;
+  margin-top: 360px; 
+  margin-left: -390px; 
+  font-size: 13px;
+  text-align: justify;
+  border: 2px solid #fff; 
+}
+
+.show5 {
+  float: left;
+  margin-top: 70px; 
+  margin-left: 30px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: auto;
+  font-size: 18px;
+  margin-bottom: 10px; 
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 100px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.footer {
+    margin-bottom: 10px;
+    font-size: 14px;
+    background-color: white;
+    color: lightgray;
+    text-align: center;
+}
