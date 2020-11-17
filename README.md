@@ -4,4 +4,4 @@ This is a class project for CIS 5800, where the promt was to automate a theatre'
 Each page was individually designed and went through revision to meet stakeholder's requirements. 
 Along with designing and coding the website, the progress was tracked through the role of a project manager, which I took on. 
 
-To view the finished site, please download the zip files and start with the file labeled 1.html. 
+Finished website - https://hrahman97.github.io/Theatre/
