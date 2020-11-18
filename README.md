@@ -1,4 +1,4 @@
-# sample_site_1
+# Theatre
 
 This is a class project for CIS 5800, where the promt was to automate a theatre's ticket system. 
 Each page was individually designed and went through revision to meet stakeholder's requirements. 
